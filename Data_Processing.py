@@ -6,11 +6,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #데이터 불러오기(차례대로 지역별 전력거래량, 행정구역별 용도별 판매전력량, 지역별 신-재생에너지 생산량, 지역별 신-재생에너지 발전량, 지역별 부문별 소비실적)
-energyTrading = pd.read_csv('C:/Users/yesye/OneDrive/바탕 화면/데이터베이스/프로젝트 자료/데이터베이스(raw data)/지역별_전력거래량_20240502173346.csv', encoding='cp949')
-salesPower = pd.read_csv('C:/Users/yesye/OneDrive/바탕 화면/데이터베이스/프로젝트 자료/데이터베이스(raw data)/행정구역별_용도별_판매전력량_20240501132320.csv', encoding='cp949')
-renewEnergyProduction = pd.read_csv('C:/Users/yesye/OneDrive/바탕 화면/데이터베이스/프로젝트 자료/데이터베이스(raw data)/지역별_신·재생에너지_생산량_비재생폐기물_제외_20240501132022.csv', encoding='cp949')
-renewEnergyGeneration = pd.read_csv('C:/Users/yesye/OneDrive/바탕 화면/데이터베이스/프로젝트 자료/데이터베이스(raw data)/지역별_신·재생에너지_발전량_비재생폐기물_제외_20240501132124.csv', encoding='cp949')
-comsumptPower = pd.read_csv('C:/Users/yesye/OneDrive/바탕 화면/데이터베이스/프로젝트 자료/데이터베이스(raw data)/지역별_부문별_소비실적_20240501180330.csv', encoding='cp949')
+energyTrading = pd.read_csv('지역별_전력거래량_20240502173346.csv', encoding='cp949')
+salesPower = pd.read_csv('행정구역별_용도별_판매전력량_20240501132320.csv', encoding='cp949')
+renewEnergyProduction = pd.read_csv('지역별_신·재생에너지_생산량_비재생폐기물_제외_20240501132022.csv', encoding='cp949')
+renewEnergyGeneration = pd.read_csv('지역별_신·재생에너지_발전량_비재생폐기물_제외_20240501132124.csv', encoding='cp949')
+comsumptPower = pd.read_csv('지역별_부문별_소비실적_20240501180330.csv', encoding='cp949')
 
 # 지역별 전력거래량
 #연도로 인덱스 설정
