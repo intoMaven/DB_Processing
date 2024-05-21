@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4cbe19ca6b486e9263baa6fd37a5d474 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4cbe19ca6b486e9263baa6fd37a5d474" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4cbe19ca6b486e9263baa6fd37a5d474 = L.map(
+                "map_4cbe19ca6b486e9263baa6fd37a5d474",
+                {
+                    center: [36.0, 127.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a099d83178125d58dac677e70009fe77 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_a099d83178125d58dac677e70009fe77.addTo(map_4cbe19ca6b486e9263baa6fd37a5d474);
+        
+    
+            var marker_6f45a969bd78704b6474cc9b1e20d035 = L.marker(
+                [37.482895, 129.145193],
+                {}
+            ).addTo(map_4cbe19ca6b486e9263baa6fd37a5d474);
+        
+    
+            var icon_bf1c88c593633aca9527a21d3d4491d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "industry", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_6f45a969bd78704b6474cc9b1e20d035.setIcon(icon_bf1c88c593633aca9527a21d3d4491d7);
+        
+    
+        var popup_53c77d269ead867490950366cc3ed4fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb12ee1557d0afba5a7b7e4f37e9e313 = $(`<div id="html_cb12ee1557d0afba5a7b7e4f37e9e313" style="width: 100.0%; height: 100.0%;">동해</div>`)[0];
+                popup_53c77d269ead867490950366cc3ed4fc.setContent(html_cb12ee1557d0afba5a7b7e4f37e9e313);
+            
+        
+
+        marker_6f45a969bd78704b6474cc9b1e20d035.bindPopup(popup_53c77d269ead867490950366cc3ed4fc)
+        ;
+
+        
+    
+    
+            var marker_d91c0f76df44d878989db1f913060531 = L.marker(
+                [37.055655, 126.51195],
+                {}
+            ).addTo(map_4cbe19ca6b486e9263baa6fd37a5d474);
+        
+    
+            var icon_5b7da6ea6bea67fd457bc3708b014ab3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "industry", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_d91c0f76df44d878989db1f913060531.setIcon(icon_5b7da6ea6bea67fd457bc3708b014ab3);
+        
+    
+        var popup_e4ef641f4652b278b38db991b5536ba0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb67d097e9d8e450eaf1efb30663e2d5 = $(`<div id="html_bb67d097e9d8e450eaf1efb30663e2d5" style="width: 100.0%; height: 100.0%;">당진</div>`)[0];
+                popup_e4ef641f4652b278b38db991b5536ba0.setContent(html_bb67d097e9d8e450eaf1efb30663e2d5);
+            
+        
+
+        marker_d91c0f76df44d878989db1f913060531.bindPopup(popup_e4ef641f4652b278b38db991b5536ba0)
+        ;
+
+        
+    
+    
+            var marker_49915b6613f6e2e2f5889be4f1632ca7 = L.marker(
+                [35.478235, 129.379191],
+                {}
+            ).addTo(map_4cbe19ca6b486e9263baa6fd37a5d474);
+        
+    
+            var icon_3141ad5b389102aabd47645ef8585bdd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "industry", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_49915b6613f6e2e2f5889be4f1632ca7.setIcon(icon_3141ad5b389102aabd47645ef8585bdd);
+        
+    
+        var popup_e252241a8bed808b645913859761d710 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e17ff80f7dec0f517ac478dde38cd9d2 = $(`<div id="html_e17ff80f7dec0f517ac478dde38cd9d2" style="width: 100.0%; height: 100.0%;">울산</div>`)[0];
+                popup_e252241a8bed808b645913859761d710.setContent(html_e17ff80f7dec0f517ac478dde38cd9d2);
+            
+        
+
+        marker_49915b6613f6e2e2f5889be4f1632ca7.bindPopup(popup_e252241a8bed808b645913859761d710)
+        ;
+
+        
+    
+    
+            var marker_905137cbed61ef4e87e9ade0dcf48d5b = L.marker(
+                [35.479847, 129.382537],
+                {}
+            ).addTo(map_4cbe19ca6b486e9263baa6fd37a5d474);
+        
+    
+            var icon_68afc6c514a37221e49499215846301e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_905137cbed61ef4e87e9ade0dcf48d5b.setIcon(icon_68afc6c514a37221e49499215846301e);
+        
+    
+        var popup_72522082c42d69fb9e30bd22fbe99c2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eff878360b6c8f7c0f0736e47f5833bd = $(`<div id="html_eff878360b6c8f7c0f0736e47f5833bd" style="width: 100.0%; height: 100.0%;">울산C/C</div>`)[0];
+                popup_72522082c42d69fb9e30bd22fbe99c2d.setContent(html_eff878360b6c8f7c0f0736e47f5833bd);
+            
+        
+
+        marker_905137cbed61ef4e87e9ade0dcf48d5b.bindPopup(popup_72522082c42d69fb9e30bd22fbe99c2d)
+        ;
+
+        
+    
+    
+            var marker_905ba6eff45058ed687ba81252d37e58 = L.marker(
+                [37.647683, 126.798605],
+                {}
+            ).addTo(map_4cbe19ca6b486e9263baa6fd37a5d474);
+        
+    
+            var icon_e885616ca4e31babd7b952d0040dea6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_905ba6eff45058ed687ba81252d37e58.setIcon(icon_e885616ca4e31babd7b952d0040dea6a);
+        
+    
+        var popup_5cdae09317e5ca387339c339c1f3ad75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a25ff5d10cae757941192f84fe6dcbb0 = $(`<div id="html_a25ff5d10cae757941192f84fe6dcbb0" style="width: 100.0%; height: 100.0%;">일산C/C</div>`)[0];
+                popup_5cdae09317e5ca387339c339c1f3ad75.setContent(html_a25ff5d10cae757941192f84fe6dcbb0);
+            
+        
+
+        marker_905ba6eff45058ed687ba81252d37e58.bindPopup(popup_5cdae09317e5ca387339c339c1f3ad75)
+        ;
+
+        
+    
+</script>
+</html>
