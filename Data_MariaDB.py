@@ -67,3 +67,30 @@ for fileName in fileNameList:
     # 커밋 및 연결 종료
     conn.commit()
     conn.close()
+
+
+conn = pymysql.connect(host='localhost', user='user1', password="12345", db='additional_data', charset='utf8')
+cursor = conn.cursor()
+
+# CSV 파일이 저장된 디렉토리 경로 설정
+csv_directory = './data_csv'
+
+# CSV 파일 목록 가져오기
+csv_files = [f for f in os.listdir(csv_directory) if f.endswith('.csv')]
+
+for csv_file in csv_files:
+    # CSV 파일의 데이터프레임 생성
+    df = pd.read_csv(os.path.join(csv_directory, csv_file))
+
+    # 파일 이름에서 테이블 이름 생성
+    table_name = os.path.splitext(csv_file)[0]
+
+    # 테이블 생성
+    create_table_from_csv(cursor, table_name, df)
+
+    # 데이터 삽입
+    insert_data_from_csv(cursor, table_name, df)
+
+# 커밋 및 연결 종료
+conn.commit()
+conn.close()
